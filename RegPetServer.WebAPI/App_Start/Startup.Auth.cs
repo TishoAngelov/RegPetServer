@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using RegPetServer.WebAPI.Providers;
 using RegPetServer.WebAPI.Models;
+using RegPetServer.Data;
 
 namespace RegPetServer.WebAPI
 {
@@ -23,7 +24,7 @@ namespace RegPetServer.WebAPI
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context and user manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(RegPetServerDbContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
 
             // Enable the application to use a cookie to store information for the signed in user
