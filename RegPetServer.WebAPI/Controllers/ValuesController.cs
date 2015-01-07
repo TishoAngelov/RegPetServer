@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace RegPetServer.WebAPI.Controllers
 {
     [Authorize]
-    public class ValuesController : ApiController
+    public class ValuesController : BaseController
     {
         // GET api/values
         public IEnumerable<string> Get()
