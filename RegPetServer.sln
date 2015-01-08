@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegPetServer.Data", "RegPet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegPetServer.WebAPI", "RegPetServer.WebAPI\RegPetServer.WebAPI.csproj", "{245B75D0-A38A-4C42-A495-CDC74E63EA4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegPetServer.WebAPI.Tests", "RegPetServer.WebAPI.Tests\RegPetServer.WebAPI.Tests.csproj", "{E9CC2501-5417-4665-A186-3E54C4754701}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{43511D40-CF49-4B76-B143-404E793DEEC4}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -36,10 +34,6 @@ Global
 		{245B75D0-A38A-4C42-A495-CDC74E63EA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245B75D0-A38A-4C42-A495-CDC74E63EA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245B75D0-A38A-4C42-A495-CDC74E63EA4C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9CC2501-5417-4665-A186-3E54C4754701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9CC2501-5417-4665-A186-3E54C4754701}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9CC2501-5417-4665-A186-3E54C4754701}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9CC2501-5417-4665-A186-3E54C4754701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,9 +5,9 @@
     using System.Data.Entity;
     using System.Linq;
     using RegPetServer.Data.Repositories;
-using RegPetServer.Models;
+    using RegPetServer.Models;
 
-    public class RegPetServerData
+    public class RegPetServerData : IRegPetServerData
     {
         private DbContext context;
         private Dictionary<Type, object> repositories;

@@ -21,7 +21,7 @@
     using RegPetServer.WebAPI.Results;
 
     [Authorize]
-    [RoutePrefix("api/Account")]
+    [RoutePrefix("api/Users")]
     public class AccountController : BaseController
     {
         private const string LocalLoginProvider = "Local";

@@ -3,16 +3,15 @@
     using System;
     using System.Linq;
     using System.Web.Http;
-    using System.Web.Mvc;
-using RegPetServer.Data;
+    using RegPetServer.Data;
 
     public class BaseController : ApiController
     {
-        private RegPetServerData data;
+        protected IRegPetServerData data;
 
         public BaseController()
         {
-
+            this.data = new RegPetServerData(RegPetServerDbContext.Create());
         }
     }
 }
