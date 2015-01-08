@@ -28,16 +28,6 @@
             get { return this.GetRepository<Category>(); }
         }
 
-        public IRepository<Comment> Comments
-        {
-            get { return this.GetRepository<Comment>(); }
-        }
-
-        public IRepository<Like> Likes
-        {
-            get { return this.GetRepository<Like>(); }
-        }
-
         public IRepository<Tag> Tags
         {
             get { return this.GetRepository<Tag>(); }

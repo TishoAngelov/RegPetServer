@@ -8,14 +8,10 @@
     public class Article
     {
         private ICollection<Tag> tags;
-        private ICollection<Like> likes;
-        private ICollection<Comment> comments;
 
         public Article()
         {
             this.tags = new HashSet<Tag>();
-            this.likes = new HashSet<Like>();
-            this.comments = new HashSet<Comment>();
         }
 
         [Key]
@@ -41,18 +37,6 @@
         {
             get { return this.tags; }
             set { this.tags = value; }
-        }
-
-        public virtual ICollection<Like> Likes
-        {
-            get { return this.likes; }
-            set { this.likes = value; }
-        }
-
-        public virtual ICollection<Comment> Comments
-        {
-            get { return this.comments; }
-            set { this.comments = value; }
         }
     }
 }

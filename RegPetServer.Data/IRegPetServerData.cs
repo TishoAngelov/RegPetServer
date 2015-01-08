@@ -10,10 +10,6 @@
 
         IRepository<Category> Categories { get; }
 
-        IRepository<Comment> Comments { get; }
-
-        IRepository<Like> Likes { get; }
-
         int SaveChanges();
 
         IRepository<Tag> Tags { get; }

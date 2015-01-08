@@ -18,7 +18,7 @@
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
-            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
+            
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -40,6 +40,8 @@
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
         }
     }
 }

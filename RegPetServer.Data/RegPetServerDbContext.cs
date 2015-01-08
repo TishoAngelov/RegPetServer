@@ -24,10 +24,6 @@
 
         IDbSet<Category> Categories { get; set; }
 
-        IDbSet<Comment> Comments { get; set; }
-
-        IDbSet<Like> Likes { get; set; }
-
         IDbSet<Tag> Tags { get; set; }
 
         // TODO: Add all models here without User.
