@@ -33,6 +33,21 @@
             get { return this.GetRepository<Tag>(); }
         }
 
+        public IRepository<Breed> Breeds
+        {
+            get { return this.GetRepository<Breed>(); }
+        }
+
+        public IRepository<Pet> Pets
+        {
+            get { return this.GetRepository<Pet>(); }
+        }
+
+        public IRepository<PetCategory> PetCategories
+        {
+            get { return this.GetRepository<PetCategory>(); }
+        }
+
         // TODO: Add repos for all models.
 
         private IRepository<T> GetRepository<T>() where T : class

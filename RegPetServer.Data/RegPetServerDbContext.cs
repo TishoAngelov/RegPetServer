@@ -26,6 +26,12 @@
 
         IDbSet<Tag> Tags { get; set; }
 
+        IDbSet<Breed> Breeds { get; set; }
+
+        IDbSet<Pet> Pets { get; set; }
+
+        IDbSet<PetCategory> PetCategory { get; set; }
+
         // TODO: Add all models here without User.
     }
 }

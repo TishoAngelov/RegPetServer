@@ -55,7 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Article.cs" />
+    <Compile Include="Breed.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Pet.cs" />
+    <Compile Include="PetCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="User.cs" />

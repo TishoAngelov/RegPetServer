@@ -9,6 +9,7 @@
         public ArticleInputModel()
         {
             this.TagNames = new HashSet<string>();
+            this.DateCreated = DateTime.Now;
         }
 
         public int Id { get; set; }
